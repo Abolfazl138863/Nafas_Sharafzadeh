@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>تولدت مبارک 🎂</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;800&display=swap">
+<style>
+:root{--bg:#14082E;--ink:#F4EEFF;--pink:#FF4FA3;--cyan:#38E1FF;--lime:#C6FF3D;--sun:#FFD23F;--card:#22104A;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;padding:24px 16px 48px;color:var(--ink);font-family:"Vazirmatn",Tahoma,sans-serif;text-align:center;overflow-x:hidden;
+background:radial-gradient(1.5px 1.5px at 12% 18%,#fff 50%,transparent),radial-gradient(1.5px 1.5px at 78% 12%,#fff 50%,transparent),radial-gradient(2px 2px at 40% 30%,#fff 50%,transparent),radial-gradient(1.5px 1.5px at 90% 45%,#fff 50%,transparent),radial-gradient(1.5px 1.5px at 8% 60%,#fff 50%,transparent),radial-gradient(1.5px 1.5px at 65% 72%,#fff 50%,transparent),radial-gradient(ellipse at 50% 0%,#3a1780,transparent 60%),var(--bg)}
+.nine{font-size:clamp(9rem,45vw,14rem);font-weight:800;line-height:1;margin:0;color:transparent;-webkit-text-stroke:3px var(--cyan);text-shadow:0 0 24px var(--cyan),0 0 60px rgba(56,225,255,.5)}
+h1{position:relative;margin:-1.1em 0 8px;font-size:clamp(1.8rem,8vw,3rem);line-height:1.4;font-weight:800;text-shadow:0 0 18px var(--pink),0 0 40px var(--pink)}
+.sub{margin:0 auto 36px;font-size:1.05rem}
+.cake{width:min(340px,88vw);margin:0 auto;filter:drop-shadow(0 0 22px rgba(255,79,163,.4))}
+.top{width:78%;margin:0 auto}
+.candles{display:flex;justify-content:space-around;padding:0 12px;height:84px;align-items:flex-end}
+.candle{all:unset;cursor:pointer;position:relative;width:14px;height:44px;border-radius:4px;background:repeating-linear-gradient(45deg,var(--c),var(--c) 6px,#fff 6px,#fff 12px)}
+.candle::before{content:"";position:absolute;inset:-30px -10px 0}
+.candle::after{content:"";position:absolute;bottom:100%;left:50%;width:8px;height:8px;margin-left:-4px;border-radius:50%;background:#cfc7e6;opacity:0}
+.candle.off::after{animation:puff 1s ease-out}
+@keyframes puff{from{opacity:.7;transform:translateY(0) scale(1)}to{opacity:0;transform:translateY(-44px) scale(3)}}
+.candle:focus-visible{outline:3px solid var(--cyan);outline-offset:6px}
+.flame{position:absolute;bottom:100%;left:50%;width:12px;height:20px;margin:0 0 2px -6px;background:radial-gradient(#fff 15%,var(--sun) 50%,#ff8a3d);border-radius:50% 50% 50% 50%/60% 60% 40% 40%;box-shadow:0 0 14px 4px rgba(255,210,63,.7);transform-origin:bottom;animation:fl .5s infinite alternate}
+.off .flame{animation:none;transform:scale(0);transition:transform .2s}
+@keyframes fl{to{transform:scaleY(1.2) rotate(4deg)}}
+.t1,.t2{position:relative}
+.t1{height:64px;border-radius:16px 16px 0 0;background:radial-gradient(3px 3px at 18% 70%,var(--sun) 90%,transparent),radial-gradient(3px 3px at 45% 60%,var(--lime) 90%,transparent),radial-gradient(3px 3px at 72% 75%,#fff 90%,transparent),radial-gradient(3px 3px at 88% 55%,var(--cyan) 90%,transparent),var(--pink)}
+.t1::after{content:"";position:absolute;inset:0 0 auto;height:22px;background:radial-gradient(circle at 14px 0,#fff 14px,transparent 15px) 0 0/28px 22px repeat-x}
+.t2{height:76px;border-radius:0 0 16px 16px;background:radial-gradient(3px 3px at 15% 40%,var(--pink) 90%,transparent),radial-gradient(3px 3px at 40% 65%,var(--sun) 90%,transparent),radial-gradient(3px 3px at 65% 35%,#fff 90%,transparent),radial-gradient(3px 3px at 85% 60%,var(--lime) 90%,transparent),var(--cyan)}
+.plate{height:12px;width:112%;margin:0 -6%;background:var(--sun);border-radius:8px}
+#count{margin:28px 0 0;font-weight:800;font-size:1.15rem;color:var(--lime);text-shadow:0 0 12px rgba(198,255,61,.6)}
+#msg{max-width:420px;margin:24px auto 0;padding:22px;background:var(--card);border:2px solid var(--cyan);border-radius:20px;box-shadow:0 0 28px rgba(56,225,255,.4);line-height:2}
+#msg[hidden]{display:none}
+#msg h2{margin:0 0 6px;font-size:1.5rem}
+#msg p{margin:0 0 16px}
+.again{font:inherit;font-weight:800;color:#14082E;background:var(--lime);border:0;border-radius:999px;padding:10px 22px;cursor:pointer;box-shadow:0 0 16px rgba(198,255,61,.5)}
+.again:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
+.balloons,canvas{position:fixed;inset:0;width:100%;height:100%;pointer-events:none}
+.balloons{overflow:hidden}
+.b{position:absolute;bottom:-120px;left:var(--x);width:44px;height:56px;border-radius:50% 50% 48% 48%;background:var(--c);opacity:.9;animation:up 7s ease-in forwards;animation-delay:var(--d)}
+.b::after{content:"";position:absolute;top:100%;left:50%;width:2px;height:40px;background:rgba(255,255,255,.4)}
+@keyframes up{to{transform:translateY(-125vh) rotate(8deg)}}
+.snd{position:fixed;top:calc(env(safe-area-inset-top,0px) + 12px);left:12px;z-index:5;width:44px;height:44px;font-size:1.3rem;line-height:1;color:var(--ink);background:var(--card);border:2px solid var(--cyan);border-radius:50%;cursor:pointer}
+.snd:focus-visible{outline:3px solid var(--lime);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){.flame{animation:none}.balloons{display:none}}
+</style>
+</head>
+<body>
+<div class="balloons" id="balloons"></div>
+<button class="snd" id="snd" aria-label="بی‌صدا کردن" aria-pressed="false">🔊</button>
+<main>
+  <p class="nine" aria-hidden="true">۹</p>
+  <h1 id="title"></h1>
+  <p class="sub">بزن رو شمع ها تا خاموش بشه.</p>
+  <div class="cake">
+    <div class="top"><div class="candles" id="candles"></div><div class="t1"></div></div>
+    <div class="t2"></div>
+    <div class="plate"></div>
+  </div>
+  <p id="count" aria-live="polite"></p>
+  <section id="msg" hidden>
+    <h2>۹ ساله شدی! 🎉</h2>
+    <p>امیدوارم امسال کلی بازی و خوش‌گذرونی داشته باشی.</p>
+    <button class="again" id="again">دوباره روشنشون کن</button>
+  </section>
+</main>
+<canvas id="fx"></canvas>
+<script>
+const NAME = "نفس کوشولو";
+document.getElementById("title").textContent = "تولدت مبارک، " + NAME;
+const colors = ["#FF4FA3","#FFD23F","#C6FF3D","#38E1FF","#B58CFF"];
+const box = document.getElementById("candles"), count = document.getElementById("count"), msg = document.getElementById("msg");
+let lit = 0;
+const update = () => count.textContent = lit ? lit.toLocaleString("fa") + " شمع هنوز روشنه" : "همه رو خاموش کردی!";
+function light(){
+  stopTune(); box.innerHTML = ""; lit = 9; msg.hidden = true;
+  for (let i = 0; i < 9; i++){
+    const b = document.createElement("button");
+    b.className = "candle"; b.style.setProperty("--c", colors[i % 5]);
+    b.setAttribute("aria-label", "شمع " + (i + 1).toLocaleString("fa"));
+    b.innerHTML = '<span class="flame"></span>';
+    b.onclick = () => {
+      if (b.classList.contains("off")) return;
+      b.classList.add("off"); lit--; update(); whoosh();
+      if (!lit){ msg.hidden = false; msg.scrollIntoView({block:"center"}); celebrate(); winSound(); }
+    };
+    box.appendChild(b);
+  }
+  update();
+}
+document.getElementById("again").onclick = light;
+let ac, muted = false, tuneNodes = [];
+function A(){
+  if (muted) return null;
+  const C = window.AudioContext || window.webkitAudioContext;
+  if (!C) return null;
+  ac = ac || new C();
+  if (ac.state === "suspended") ac.resume();
+  return ac;
+}
+function noise(a, dur){
+  const n = Math.floor(a.sampleRate * dur), buf = a.createBuffer(1, n, a.sampleRate), d = buf.getChannelData(0);
+  for (let i = 0; i < n; i++) d[i] = Math.random() * 2 - 1;
+  const s = a.createBufferSource(); s.buffer = buf; return s;
+}
+function whoosh(){
+  const a = A(); if (!a) return;
+  const t = a.currentTime, s = noise(a, .4), f = a.createBiquadFilter(), g = a.createGain();
+  f.type = "bandpass"; f.Q.value = 1.2;
+  f.frequency.setValueAtTime(1600, t); f.frequency.exponentialRampToValueAtTime(300, t + .35);
+  g.gain.setValueAtTime(.35, t); g.gain.exponentialRampToValueAtTime(.001, t + .38);
+  s.connect(f); f.connect(g); g.connect(a.destination); s.start(t);
+}
+function tone(a, f, t, d, type, v){
+  const o = a.createOscillator(), g = a.createGain();
+  o.type = type || "triangle"; o.frequency.value = f;
+  g.gain.setValueAtTime(.0001, t); g.gain.exponentialRampToValueAtTime(v || .18, t + .02); g.gain.exponentialRampToValueAtTime(.0001, t + d);
+  o.connect(g); g.connect(a.destination); o.start(t); o.stop(t + d + .05); tuneNodes.push(o);
+}
+function pop(){
+  const a = A(); if (!a) return;
+  const t = a.currentTime, s = noise(a, .3), f = a.createBiquadFilter(), g = a.createGain(), o = a.createOscillator(), og = a.createGain();
+  f.type = "lowpass"; f.frequency.value = 900;
+  g.gain.setValueAtTime(.4, t); g.gain.exponentialRampToValueAtTime(.001, t + .3);
+  s.connect(f); f.connect(g); g.connect(a.destination); s.start(t);
+  o.frequency.setValueAtTime(160, t); o.frequency.exponentialRampToValueAtTime(40, t + .25);
+  og.gain.setValueAtTime(.4, t); og.gain.exponentialRampToValueAtTime(.001, t + .25);
+  o.connect(og); og.connect(a.destination); o.start(t); o.stop(t + .3);
+}
+function winSound(){
+  const a = A(); if (!a) return;
+  const t = a.currentTime;
+  [523, 659, 784, 1047].forEach((f, i) => tone(a, f, t + i * .09, .3, "square", .07));
+  const B = .42, m = [[392,.75],[392,.25],[440,1],[392,1],[523,1],[494,2],[392,.75],[392,.25],[440,1],[392,1],[587,1],[523,2],[392,.75],[392,.25],[784,1],[659,1],[523,1],[494,1],[440,1],[698,.75],[698,.25],[659,1],[523,1],[587,1],[523,2]];
+  let x = t + .7;
+  m.forEach(([f, b]) => { tone(a, f, x, b * B * .95, "triangle", .2); x += b * B; });
+}
+function stopTune(){ tuneNodes.forEach(o => { try { o.stop(); } catch (e) {} }); tuneNodes = []; }
+const snd = document.getElementById("snd");
+snd.onclick = () => {
+  muted = !muted; snd.textContent = muted ? "🔇" : "🔊";
+  snd.setAttribute("aria-pressed", muted); if (muted) stopTune();
+};
+const bl = document.getElementById("balloons");
+for (let i = 0; i < 8; i++){
+  const d = document.createElement("div"); d.className = "b";
+  d.style.setProperty("--x", (5 + i * 12 + Math.random() * 6) + "%");
+  d.style.setProperty("--c", colors[i % 5]);
+  d.style.setProperty("--d", (Math.random() * 2.5) + "s");
+  bl.appendChild(d);
+}
+const cv = document.getElementById("fx"), cx = cv.getContext("2d");
+let ps = [], running = false;
+const R = Math.random;
+function burst(x, y){
+  const c = colors[Math.floor(R() * 5)];
+  for (let i = 0; i < 60; i++){ const a = R() * 6.283, s = 2 + R() * 5; ps.push({x, y, vx: Math.cos(a) * s, vy: Math.sin(a) * s, g: .06, life: 70 + R() * 30, c, w: 3, h: 3}); }
+}
+function rain(){
+  for (let i = 0; i < 120; i++) ps.push({x: R() * cv.width, y: -R() * cv.height * .5, vx: R() * 2 - 1, vy: 2 + R() * 3, g: 0, life: 260, c: colors[Math.floor(R() * 5)], w: 7, h: 4});
+}
+function loop(){
+  cx.clearRect(0, 0, cv.width, cv.height);
+  ps.forEach(p => { p.x += p.vx; p.y += p.vy; p.vy += p.g; p.life--; cx.globalAlpha = Math.min(1, p.life / 30); cx.fillStyle = p.c; cx.fillRect(p.x, p.y, p.w, p.h); });
+  cx.globalAlpha = 1;
+  ps = ps.filter(p => p.life > 0);
+  if (ps.length) requestAnimationFrame(loop); else running = false;
+}
+function start(){ if (!running){ running = true; loop(); } }
+function celebrate(){
+  if (matchMedia("(prefers-reduced-motion:reduce)").matches) return;
+  cv.width = innerWidth; cv.height = innerHeight;
+  rain(); start();
+  [0, 400, 800, 1300].forEach(t => setTimeout(() => { burst(cv.width * (.2 + R() * .6), cv.height * (.15 + R() * .3)); start(); pop(); }, t));
+}
+light();
+</script>
+</body>
+</html>
